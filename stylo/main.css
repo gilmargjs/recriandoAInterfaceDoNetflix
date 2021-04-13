@@ -1,0 +1,41 @@
+:root{/*variavel em cass*/
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    /*flex-direction: row;/*obs se não colocar não faz diferença pporque já vem por padrão*/
+    align-items: center;
+    justify-content: space-between;/*cria espaço entre a 1 tag filha no caso h2 e a tag nav*/
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial',Times;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+ header nav a{
+    text-decoration:none;
+    color:#aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
